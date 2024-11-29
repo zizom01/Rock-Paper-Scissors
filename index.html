@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock paper scissor game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+    <div id="scoreDiv">
+        <label for="score" style="font-size: xx-large;">Score:</label><label class="ms-2 text-success" style="font-size: xx-large;" id="score"></label>
+    </div>
+    <div class="d-flex justify-content-center mt-5 mb-5">
+        <select id="options" name="options" class="me-2">
+            <option selected disabled value="player1">Player1</option>
+            <option value="cat">cat</option>
+            <option value="rock">rock</option>
+            <option value="paper">paper</option>
+            <option value="scissors">scissors</option>
+            <option value="horse">horse</option>
+          </select>
+
+<select id="player2" name="options">
+    <option selected disabled value="player2">Player2</option>
+  <option value="cat">cat</option>
+  <option value="rock">rock</option>
+  <option value="paper">paper</option>
+  <option value="scissors">scissors</option>
+  <option value="horse">horse</option>
+</select>
+
+        <button id="start" type="button" class="btn btn-primary" style="width: 90px; height: 40px; margin-left: 10px;">Start</button>
+        <button id="reset" type="reset" class="btn btn-danger" style="width: 90px; height: 40px; margin-left: 10px;">Reset</button>
+    </div>
+    <div class="row">
+        <div  class="col">
+            <img hidden id="myImg" src="" style="width: 200px; height: 200px;">
+         </div>
+         <div class="col" >
+            <img hidden id="vs" src="pngtree-luxury-vs-versus-logos-png-image_6527522.png" style="width: 200px; height: 200px;">
+         </div>
+        <div class="col" >
+            <img hidden id="opImg" src="" style="width: 200px; height: 200px;">
+         </div>
+    </div>
+    <div class="d-flex justify-content-center align-items-center">
+        <H2 id="win"></H2>
+    </div>
+
+    </div>
+
+
+
+
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
